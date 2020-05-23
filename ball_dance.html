@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+
+            body{
+                margin: 0px;
+            }
+
+            #ball{
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+                position: absolute;
+                z-index: 9;
+                overflow: scroll;
+            }
+           
+            
+            .grid-container{
+                position: relative;
+                height: 100%;
+                width: 100%;
+                display: grid;
+                margin: 0px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                z-index: 1;
+            }
+            .grid-block{
+                padding: 0px;
+                margin: 0px;
+                z-index: 1;
+            }
+            #d1{
+                border-left: 2px solid #80ADD7;
+                border-top: 2px solid #80ADD7;
+            }
+            #d2{
+                border-left: 2px solid #0e4675;
+                border-top: 2px solid #0e4675;
+            }
+            #d3{
+                border-left: 2px solid #9ae1d4;
+                border-top: 2px solid #9ae1d4;
+
+            }
+            #d4{
+                border-left: 2px solid #f9d4db;
+                border-top: 2px solid #f9d4db;
+            }
+            #d5{
+                border-left: 2px solid #ff9690;
+                border-top: 2px solid #ff9690;
+            }
+            #d6{
+                border-left: 2px solid #f9545b;
+                border-top: 2px solid #f9545b;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div id="section-one" class="sections" style="display : inline-block"></div>
+        <div id="section-two" class="sections" style="display: inline-block;"></div>
+        <div id="section-three" class="sections" style="display: inline-block;"></div>
+        <div id="section-four" class="sections" style="display: inline-block;"></div>
+        <div id="section-five" class="sections" style="display: inline-block;"></div>
+        <div id="section-six" class="sections" style="display: inline-block;"></div>
+
+        <div class="grid-container">
+            <div id="ball" >
+            </div>
+            <div class="grid-block" id="d1" style="background-color: black;"></div>
+            <div class="grid-block" id="d2" style="background-color: black;"></div>
+            <div class="grid-block" id="d3" style="background-color: black;"></div>
+            <div class="grid-block" id="d4" style="background-color: black;"></div>
+            <div class="grid-block" id="d5" style="background-color: black"></div>
+            <div class="grid-block" id="d6" style="background-color: black"></div>
+        </div>
+       
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="./mouse_mov.js"></script>
+        
+    </body>
+</html>
