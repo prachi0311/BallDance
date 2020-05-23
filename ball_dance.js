@@ -123,8 +123,7 @@ $(document).mousemove(function(event){
 
     //to check if part of a circle is in block 4
     if(enterdiv4(ballCoordinates)){
-       console.log('enter div4');
-       //console.log('sec4 height',getHeight(div4,ballCoordinates));
+       //console.log('enter div4');
        let pos = getPosition(div4,ballCoordinates);
        section4.width(getWidth(div4,ballCoordinates));
        section4.height(getHeight(div4,ballCoordinates));
